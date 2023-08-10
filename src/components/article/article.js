@@ -89,7 +89,7 @@ const data = [
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
-function articleMaker(articleObj) {
+function articleMaker(articleObej) {
   const articleWrapper = document.createElement('div');
   const articleTite = document.createElement('h2');
   const articleDate = document.createElement('p');
@@ -110,11 +110,11 @@ function articleMaker(articleObj) {
   articleWrapper.appendChild(articleParagraphThree);
   articleWrapper.appendChild(expandButton);
 
-  articleTite.textContent = articleObj.title;
-articleTite.textContent = articleObj.date;
-articleParagraphOne.textContent = articleObj.firstParagraph;
-articleParagraphTwo.textContent = articleObj.secondParagraph;
-articleParagraphThree.textContent = articleObj.thirdParagraph;
+  articleTite.textContent = articleObej.title;
+articleTite.textContent = articleObej.date;
+articleParagraphOne.textContent = articleObej.firstParagraph;
+articleParagraphTwo.textContent = articleObej.secondParagraph;
+articleParagraphThree.textContent = articleObej.thirdParagraph;
 expandButton.textContent = "+";
 
   expandButton.addEventListener('click', () => {

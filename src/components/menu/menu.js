@@ -9,7 +9,7 @@ let menuItems = [
   'Music',
   'Log Out'
 ];
-// (.1) Menu Maker
+//  Menu Maker
 
 function menuMaker(linksArray) {
   const menuWrapper = document.createElement('div');
